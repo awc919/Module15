@@ -118,14 +118,14 @@ section {
         margin:auto;
          }
 
-.topnav {
+/*.topnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #333;
   padding: 15px 20px;
   color: #fff;
-}         
+}         */
 
 .topnav.responsive{
   display: flex;
