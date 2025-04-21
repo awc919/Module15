@@ -127,14 +127,14 @@ section {
   color: #fff;
 }         */
 
-.topnav.responsive{
+/*.topnav.responsive{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #333;
   padding: 15px 20px;
   color: #fff;
-}
+}*/
 #navbar {
     background-color: black;
     position: static; 
@@ -289,12 +289,11 @@ img {
     grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
     row-gap: 3rem;
   }
- container {
+ .container {
     display: grid;
     grid-template-columns:2fr 1fr;
     grid-template-rows:repeat(3, min-content);
-    grid-column: 1 / -1;
- }
+  }
 footer{
         border-top: 2px solid black;
         margin-top: 1%;
