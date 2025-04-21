@@ -1,0 +1,167 @@
+<!-- Macon County website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <title>Macon County</title>
+</head>
+<header class="navbar">
+	<h2>Welcome to Macon County!</h2>
+	<h2>Serving Franklin | Highlands | Nantahala | Otto</h2>
+	<!-- SVG Wave at the bottom -->
+	<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+	  <path fill="#084F6A" d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+	</svg>
+	
+<!--<nav id="navbar">-->
+	<img src="css/Macon.jpg" alt="Macon Logo" style="width:15%;height:15%;float:left;">
+	   <ul id="navcontent">
+		   <li><a href="index.html" target="_blank" rel="referer">Home</a></li>
+		   <li><a href="residents.html" target="_blank" rel="referer">Residents</a></li>
+		   <li><a href="businesses.html" target="_blank" rel="referer">Businesses</a></li>
+		   <li><a href="visitors.html" target="_blank" rel="referer">Visitors</a></li>
+		   <li><a href="Agencies.html" target="_blank" rel="referer">Government Agencies</a></li>
+		   <li><a href="contact.html" target="_blank" rel="referer">Contact Us</a></li>
+	   </ul>
+	   
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	 <i class="fa fa-bars"></i>
+   </a>
+   <script>
+   function myFunction() {
+	 var x = document.getElementById("myTopnav");
+	 if (x.className === "topnav") {
+	   x.className += " responsive";
+	 } else {
+	   x.className = "topnav";
+	 }
+   }
+ </script>
+ <script>
+	 function myFunction() {
+   var x = document.getElementById("myLinks");
+   if (x.style.display === "block") {
+	 x.style.display = "none";
+   } else {
+	 x.style.display = "block";
+   }
+ }
+ </script>
+ </nav>
+</header>
+<body>
+<!-- Div for - use organize the header content
+    <div class="header">
+        <h1>Welcome to Macon County</h1>
+        <p><strong>Gem Capital</strong> Nantahala National Forest <strong>whitewater rafting</strong> Cherokee Nation</p>
+    </div>-->
+
+<!-- Div for top navigation to organize navigation elements 
+    <div class="topnav">
+        <li><a href="index.html">Home</a></li>  
+		<li><a href="residents.html">Residents</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="visitors.html">Visitors</a></li>
+		  <li><a href="Agencies.html">Government Agencies</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+    </div> -->
+
+    <!-- Div for form elements -->
+    <div id="container">
+		<header>
+			<h1>Contact Us</h1>
+			    <h2><strong>Gem Capital </strong>| Nantahala National Forest <strong>| Whitewater Rafting</strong>| Cherokee Nation</h2>
+		</header>
+		<main>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+<br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<br>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+				<br>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<br>
+				<br>
+				<br>
+				<label>How can we help?</label>
+				<br>
+				<input type="checkbox" id="interest1" name="interest1" value="interest1">
+				<label for="interest1">Emergency Services</label>
+				<br>
+				<input type="checkbox" id="interest2" name="interest2" value="interest2">
+				<label for="interest2">Government Agency Services</label>
+				<br>
+				<input type="checkbox" id="interest3" name="interest3" value="interest3">
+				<label for="interest3">Economic Development</label>
+				<br>
+				<input type="checkbox" id="interest1" name="interest1" value="interest1">
+				<label for="interest1">Tourism Information</label>
+				<br>
+				<br>
+				<br>
+				<label>Are you a current resident?</label>
+				<br>
+				<input type="radio" id="customer1" name="customer" value="yes">
+				<label for="customer1">Yes</label>
+				<input type="radio" id="customer2" name="customer" value="no">
+				<label for="customer2">No</label>
+				<br>
+				<br>
+				<br>
+				<label for="dropdown">How did you hear about us?</label>
+				<select id="dropdown" name="dropdown">
+					<option value="option1">Social media</option>
+					<option value="option2">Friend/Family referral</option>
+					<option value="option3">Current resident</option>
+				</select>
+
+				<br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+
+			<section class="social">
+			<div class="social-icons">
+					<a href="https://www.facebook.com/">
+					  <i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://twitter.com">
+					  <i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://instagram.com">
+					  <i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/macon-county-government-nc/">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+					<a href="https://www.youtube.com">
+					  <i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</section>
+		</main>
+	</div>
+
+    <!-- Div for footer-->
+	 <footer>
+    <div class="footer">
+        <a href="https://www.maconnc.org" target="_blank">Macon County</a>
+        5 West Main Street
+        Franklin, NC 28734
+        828-349-2000
+        &copy; 2025
+        </div>
+	</footer>
+    </body>
+</html>
