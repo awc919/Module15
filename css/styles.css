@@ -118,6 +118,23 @@ section {
         margin:auto;
          }
 
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 15px 20px;
+  color: #fff;
+}         
+
+.topnav.responsive{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 15px 20px;
+  color: #fff;
+}
 #navbar {
     background-color: black;
     position: static; 
