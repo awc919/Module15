@@ -6,17 +6,17 @@
 </head>
 <body>
 <header>
-Serving Franklin | Highlands | Nantahala | Otto 
+Macon County North Carolina | Serving Franklin | Highlands | Nantahala | Otto 
 </header>
 <nav id="navbar">
-   <img src="./css/macon.jpg" alt="Macon Logo" style="width:10%;height:10%;float:left;">
+     <img src="./css/macon.jpg" alt="Macon Logo" style="width:10%;height:10%;float:left;">
       <ul id="navcontent">
-          <li><a href="index.html" target="_blank" rel="referer">Home</a></li>
-          <li><a href="residents.html" target="_blank" rel="referer">Residents</a></li>
-          <li><a href="businesses.html" target="_blank" rel="referer">Businesses</a></li>
-          <li><a href="visitors.html" target="_blank" rel="referer">Visitors</a></li>
-          <li><a href="Agencies.html" target="_blank" rel="referer">Government Agencies</a></li>
-          <li><a href="contact.html" target="_blank" rel="referer">Contact Us</a></li>
+          <li><a href="index.html" rel="referer">Home</a></li>
+          <li><a href="residents.html" rel="referer">Residents</a></li>
+          <li><a href="businesses.html" rel="referer">Businesses</a></li>
+          <li><a href="visitors.html" rel="referer">Visitors</a></li>
+          <li><a href="Agencies.html" rel="referer">Government Agencies</a></li>
+          <li><a href="contact.html" rel="referer">Contact Us</a></li>
       </ul>
   
  <!--     <div id="myTopnav" class="topnav">
@@ -54,22 +54,40 @@ Serving Franklin | Highlands | Nantahala | Otto
   }
 }
 </script>-->
-
 </nav>
+
 <article>
-<aside>
-    <h1>
-    Macon County Government<br>
-</h1>
-</aside>
+  <title>Photo Slideshow</title>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="./css/IMG_1303.JPG" alt="Image 1">
+    </div>
+    <div class="slide fade">
+      <img src="./css/IMG_1330.JPG" alt="Image 2">
+    </div>
+    <div class="slide fade">
+      <img src="./css/IMG_1357.JPG" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    showSlides();
+  </script>
 </article>
 <div id="container1"></div>
-<br></br>
-Macon County is located in the state of North Carolina. The population is approximately 37,014. Its county seat is Franklin. The Nantahala River runs through Macon County, flowing into the Little Tennessee River in Swain County. Wikipedia
-<br></br>
-Macon County, North Carolina, is known for its natural beauty, particularly the Nantahala National Forest, which offers outdoor activities like whitewater rafting and hiking, as well as for its rich mineral and gemstone deposits, drawing gem enthusiasts and rockhounds. 
-<br></br>
-<br></br>
 
 <p>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -78,13 +96,21 @@ Macon County, North Carolina, is known for its natural beauty, particularly the 
 <br></br>
 </p>
 <p>
-    <img src="./css/IMG_1303.JPG" alt="Sunset" loading="lazy" style="width:150px;height:150px;"><br>
-    Surveys<br>
-    <img src="./css/IMG_1330.JPG" alt="Lakes" loading="lazy" style="width:150px;height:150px;"><br>
-    Emergency Services<br>
-    <img src="./css/IMG_1357.JPG" alt="Jobs" loading="lazy" style="width:150px;height:150px;"><br>
-    Employment<br>
+    <a href="residents.html">
+     <img src="./css/Survey.jpg" alt="Residents" title="Residents" loading="lazy" style="width:80px;height:80px;"> <br>
+    </a>
+    <br>
+    <a href="Agencies.html">
+    <img src="./css/Emergency.jpg" alt="County Agencies" title="County Agencies" loading="lazy" style="width:80px;height:80px;"><br>
+    </a>
+    <br>
+    <a href="businesses.html">
+    <img src="./css/Jobs.jpg" alt="Businesses" title="Businesses" loading="lazy" style="width:80px;height:80px;"><br>
+     </a>
+    <br>
 </p>
+
+
 <section>
  Macon County is a member of the NC Economic Development Commission (<a href="https://www.maconcountync.org/">Macon County</a>)
 </section>
